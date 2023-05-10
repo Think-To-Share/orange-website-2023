@@ -2,7 +2,15 @@
     background-color: #3f3f3f;
     .contact-footer{
         .call{
+            text-align: center; 
+            a{
+                text-decoration: none;
+                color: #949494;
+            }
+        }
+        .address{
             text-align: center;
+            color: #949494;
         }
     }
     .orange-footer-menu{
