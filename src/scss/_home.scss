@@ -62,16 +62,161 @@
             }
         }
     }
-    // .about-us-image{
-    //     width: 100%;
-    // }
 }
+
+//glimpse section start
+.glimpse-sec{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .glimpse-row{
+        align-items: center;
+        .glimpse{
+            display: flex;
+            .best-seller{
+                width: 20%;
+            }
+            .book-image{
+                width: 80%;
+                .glimpse-image{
+                    border-radius:15px;
+                }
+            }
+        }
+        
+        .glimpse-sec-heading{
+            font-family: $primary-font;
+            font-weight: 800;
+            @include font-size(2.5rem);
+            color: #3d4043;
+        }
+        .glimpse-sec-sub-heading{
+            font-family: $primary-font;
+            font-weight: 400;
+            @include font-size(1.2rem);
+            color: #3d4043;
+            .author-name{
+                color: $primary-color;
+            }
+        }
+        .glimpse-sec-text{
+            color: #56595b;
+            @include font-size(1.1rem);
+            font-family: $primary-font;
+            font-weight: 100;
+        }
+        .book-amount{
+            font-family: $primary-font;
+            font-weight: 600;
+            @include font-size(2rem);
+            color: #3d4043;
+            padding-top: 10px;
+        }
+        .glimpse-sec-btn-container{
+            width: 100%;
+            margin-top: 40px;
+            text-align: left;
+            .glimpse-sec-btn{
+                text-decoration: none;
+                text-align: center;
+                color: #ffffff;
+                background-color: $primary-color;
+                @include font-size(1.1rem);
+                padding: 10px 40px;
+                display: inline-block;
+                font-family: $primary-font;
+                font-weight: 400;
+                border-radius: 50px;
+                border:1px solid $primary-color;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    background-color: transparent;
+                    color: $primary-color;
+                    border:1px solid $primary-color;
+                }
+            }
+        }
+    }
+    
+}
+
+// Publishing Service start
+.publishing-service-sec{
+    margin-bottom: 80px;
+    .publishing-service-heading{
+        text-align: center;
+        font-family: $primary-font;
+        font-weight: 800;
+        @include font-size(2rem);
+        color: #3d4043;
+    }
+    .publishing-service-sub-heading{
+        text-align: center;
+        font-family: $primary-font;
+        font-weight: 500;
+        @include font-size(1.2rem);
+        color: #333333;
+    }
+    .publishing-btn-container{
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+        .publishing-btn{
+            text-decoration: none;
+            text-align: center;
+            color: #ffffff;
+            background-color: #333333;
+            @include font-size(0.9rem);
+            padding: 15px 50px;
+            display: inline-block;
+            font-family: $primary-font;
+            font-weight: 400;
+            border-radius: 50px;
+            border:1px solid #333333;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                background-color: transparent;
+                color: $primary-color;
+                border:1px solid $primary-color;
+            }
+        }
+    }
+}
+
 
 //Testimonials section start
 .client-section{
     background-color: $primary-color;
     text-align: center;
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    .tns-outer {
+        position: relative;
+        .tns-nav {
+            display: none;
+            justify-content: center;
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            width: 100%;
+            @media (min-width: 768px) {
+                display: flex;
+            }
+            button {
+                padding: 5px;
+                border: none;
+                background-color: change-color($color: #fff, $alpha: 0.5);
+                border-radius: 50%;
+                box-shadow: none;
+                margin-left: 8px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &.tns-nav-active {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
     .client-section-heading{
         font-family: $primary-font;
         color: #ffffff;
@@ -83,6 +228,8 @@
         .slides{
             .slide{
                 .slide-main{
+                    width: 57%;
+                    margin: 0 auto;
                     .client-text{
                         font-family: $primary-font;
                         color: #fceae2;
@@ -95,10 +242,11 @@
                         display: flex;
                         justify-content: center;
                         text-align: left;
+                        align-items: center;
                         .testimonial-left-side{
                             .client-img{
                                 border-radius: 100%;
-                                width: 70%;
+                                width: 82%;
                             }
                         }
                         .testimonial-right-side{
@@ -112,7 +260,7 @@
                             .about-client{
                                 font-family: $primary-font;
                                 font-weight: 100;
-                                @include font-size(1rem);
+                                @include font-size(0.9rem);
                                 color: #fff;
                                 margin: 0;
                             }
