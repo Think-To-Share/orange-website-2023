@@ -64,6 +64,166 @@
     }
 }
 
+//New Releases Section Start
+.new-releases-sec{
+    .new-releases-heading{
+        text-align: center;
+        font-family: $primary-font;
+        font-weight: 800;
+        @include font-size(2.1rem);
+        color: #3d4043;
+    }
+    .new-releases-sub-heading{
+        text-align: center;
+        font-family: $primary-font;
+        font-weight: 500;
+        @include font-size(1.1rem);
+        color: #333333;
+        padding-bottom: 15px;
+    }
+    .new-releases-text{
+        .card{
+            border: 1px solid #f0f0f0;
+            background-color: #f0f0f0;
+            border-radius: 15px;
+            transition: border 0.3s ease-in-out;
+            .card-body{
+                .img-container{
+                    .card-img-top{
+                        border-radius: 15px;
+                    }
+                }
+                .card-heading-text{
+                    text-align: center;
+                    font-family: $primary-font;
+                    font-weight: 700;
+                    @include font-size(1rem);
+                    padding-top: 15px;
+                    color: #000000;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                .card-text{
+                    text-align: center;
+                    font-family: $primary-font;
+                    font-weight: 400;
+                    @include font-size(0.9rem);
+                    color: #000000;
+                    margin: 0;
+                    .name{
+                        color: $primary-color;
+                    }
+                }
+                .price{
+                    text-align: center;
+                    font-family: $primary-font;
+                    font-weight: 600;
+                    @include font-size(0.9rem);
+                    color: $primary-color;
+                    margin: 0;
+                    padding-bottom: 20px;
+                    .sale-price{
+                        @include font-size(1.5rem);
+                        font-weight: 800;
+                    }
+                }
+            }
+            &:hover{
+                border: 1px solid $primary-color;
+            }
+        }
+    }
+    .new-releases-btn-container{
+            width: 100%;
+            margin-top: 40px;
+            text-align: center;
+            .new-releases-btn{
+                text-decoration: none;
+                text-align: center;
+                color: #ffffff;
+                background-color: #333333;
+                @include font-size(1.1rem);
+                padding: 10px 40px;
+                display: inline-block;
+                font-family: $primary-font;
+                font-weight: 400;
+                border-radius: 50px;
+                border:1px solid #333333;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    background-color: transparent;
+                    color: $primary-color;
+                    border:1px solid $primary-color;
+                }
+            }
+    }
+}
+
+// Our Events Section Start
+.events-sec{
+    .events-sec-heading{
+
+    }
+    .events-sec-sub-heading{
+
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
+        .grid-image1{
+            grid-column: span 2;
+            .image-container{
+                width: 100%;
+            }
+        }
+        .grid-image2{
+            grid-row: span 2;
+            .image-container{
+                width: 100%;
+            }
+        }
+        .grid-image3{
+            grid-row: span 3;
+            .image-container{
+                width: 100%;
+            }
+        }
+        .grid-image4{
+            .image-container{
+                width: 100%;
+            }
+        }
+        .grid-image5{
+            grid-row: span 2;
+            .image-container{
+                width: 100%;
+            }
+        }
+        .grid-image6{
+            grid-row: span 2;
+            .image-container{
+                width: 100%;
+            }
+        }
+        .grid-image7{
+            .image-container{
+                width: 100%;
+            }
+        }
+        .grid-image8{
+            .image-container{
+                width: 100%;
+            }
+        }
+        .grid-image9{
+            .image-container{
+                width: 100%;
+            }
+        }
+    }
+}
+
 //glimpse section start
 .glimpse-sec{
     margin-top: 50px;
