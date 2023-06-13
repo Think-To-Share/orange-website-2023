@@ -3,11 +3,32 @@
         background-color: #3f3f3f;
         padding: 0;
         padding-top: 80px;
+        .footer-logo{
+            text-align: center;
+            margin-bottom: 10px;
+           img{
+            width: 50%;
+
+            @media (min-width:576px) {
+                width: auto;
+            }
+           }
+
+        }
         .contact-footer{
+            padding-left: 10px;
+            padding-right: 10px;
             .call{
                 text-align: center;
                 color: #949494; 
                 margin: 0;
+                font-family: $secondary-font;
+                font-size: 10px;
+
+                @media (min-width:576px) {
+                    font-size: 18px;
+                }
+
                 a{
                     text-decoration: none;
                     color: #949494;
@@ -15,30 +36,52 @@
             }
             .address{
                 text-align: center;
+                font-family: $secondary-font;
+                font-size: 11px;
                 color: #949494;
+
+                @media (min-width:576px) {
+                    font-size: 18px;
+                }
             }
         }
         .orange-footer-menu{
             ul {
                 display: flex;
                 justify-content: center;
-                gap: 39px;
+                gap: 10px;
+                flex-wrap: wrap;
                 width: 100%;
                 margin: 0;
                 padding: 0;
                 height: 100%;
                 align-items: center;
                 flex-direction: row;
+
+                @media (min-width: 576px) {
+                    gap: 20px;
+                }
+
+    
                 li {
                     list-style-type: none;
-                    padding: 15px 0;
+                    padding:  0;
+
+                    @media (min-width: 576px) {
+                        padding: 15px 0;
+                    }
                     a{
                         text-decoration: none;
-                        @include font-size(1.2rem);
+                        font-family: $secondary-font;
+                        @include font-size(0.7rem);
                         text-transform: capitalize;
                         color: #f2f2f2;
                         font-weight: 400;
                         transition: color 0.3s ease-in-out;
+
+                        @media (min-width:576px) {
+                            @include font-size(1.2rem);
+                        }
                     }
                 }
             }
@@ -87,23 +130,51 @@
                         transform: translate(-50%, -50%);
                     }
                 }
+                .facebook{
+                    svg{
+                        &:hover{
+                            fill: #1877f2;
+                        }
+                    }
+                }
+                .insta{
+                    svg{
+                        &:hover{
+                            fill: #c32aa3;
+                        }
+                    }                      
+                }
+                .linkedin{
+                    svg{
+                        &:hover{
+                            fill: #0a66c2;
+                        }
+                    }
+                }
 
             }
         }
     }
   .copyright{ 
-    background-color: #333333;
+    background-color: #333333; 
     .text{
         display: flex;
         justify-content: space-between;
         color: #8d8d8d;
         padding: 12px 0;
+        padding-left: 10px;
+        padding-right: 10px;
         .copyright-text{
             margin: 0;
-            @include font-size(1rem);
+            font-family: $secondary-font;
+            @include font-size(0.6rem);
             span{
                 color: #e4e4e4;
 
+            }
+
+            @media (min-width:576px) {
+                @include font-size(1rem);
             }
         }
     }
