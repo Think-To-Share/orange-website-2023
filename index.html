@@ -160,60 +160,53 @@
 
     <!-- Our Events Section Start -->
     <section class="events-sec">
-        <div class="container">
+        <div class="container"  x-data="{open:0}" >
             <h2 class="events-sec-heading">Our Events</h2>
             <p class="events-sec-sub-heading">Be the readable content of a page when looking at its layout.</p>
             <div class="row evnt-content gy-5 justify-content-center">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="events-content-text h-100"> 
-                        <a href="">
-                            <div class="card h-100">
-                                <div class="card-body">                               
-                                    <h3 class="card-heading-text">Book Fair</h3>
-                                    <p class="card-text">Printing & Typesetting</p>
-                                </div>
+                    <div class="events-content-text h-100">                        
+                        <div class="card h-100  " x-on:click="open = 0" :class="{ 'active': open === 0 }">
+                            <div class="card-body">                               
+                                <h3 class="card-heading-text">Book Fair</h3>
+                                <p class="card-text">Printing & Typesetting</p>
                             </div>
-                        </a>
+                        </div>                       
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="events-content-text h-100">
-                        <a href="">
-                            <div class="card h-100">
-                                <div class="card-body">                               
-                                    <h3 class="card-heading-text">Book Launch</h3>
-                                    <p class="card-text">Printing & Typesetting</p>
-                                </div>
+                    <div class="events-content-text h-100">  
+                        <div class="card h-100 " x-on:click="open = 1" :class="{ 'active': open === 1 }">
+                            <div class="card-body">                               
+                                <h3 class="card-heading-text">Book Launch</h3>
+                                <p class="card-text">Printing & Typesetting</p>
                             </div>
-                        </a>
+                        </div>                     
                     </div>
                 </div>
                 <div class="col-12 col-sm-6  col-md-4 col-lg-3">
                     <div class="events-content-text h-100">
-                        <a href="">
-                            <div class="card h-100">
-                                <div class="card-body">                             
-                                    <h3 class="card-heading-text">Book Fair</h3>
-                                    <p class="card-text">Printing & Typesetting</p>
-                                </div>
+                        <div class="card h-100 " x-on:click="open = 2" :class="{ 'active': open === 2 }">
+                            <div class="card-body" >                             
+                                <h3 class="card-heading-text">Book Fair</h3>
+                                <p class="card-text">Printing & Typesetting</p>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6  col-md-4 col-lg-3">
-                    <div class="events-content-text h-100">
-                        <a href="">
-                            <div class="card h-100"> 
-                                <div class="card-body">                             
-                                    <h3 class="card-heading-text">Book Launch</h3>
-                                    <p class="card-text">Printing & Typesetting</p>
-                                </div>
+                    <div class="events-content-text h-100"> 
+                        <div class="card h-100 " x-on:click="open = 3" :class="{ 'active': open === 3 }"> 
+                            <div class="card-body">                             
+                                <h3 class="card-heading-text">Book Launch</h3>
+                                <p class="card-text">Printing & Typesetting</p>
                             </div>
-                        </a>
+                        </div>   
                     </div>
                 </div>
             </div>
-            <div class="row">
+  <!-- 1st button  -->
+            <div class="row" x-show="open == 0">
                 <div class="col-12">
                     <div class="grid-container">
                         <div class="grid-image1">
@@ -246,6 +239,116 @@
                     </div>
                 </div>   
             </div>
+
+            <!-- second button -->
+
+            <div class="row" x-show="open == 1">
+                <div class="col-12">
+                    <div class="grid-container">
+                        <div class="grid-image1">
+                            <img src="./src/images/events1.jpg" alt="" class="image-container">
+                        </div> 
+                        <div class="grid-image1">
+                            <img src="./src/images/events1.jpg" alt="" class="image-container">
+                        </div> 
+                        <div class="grid-image2">
+                            <img src="./src/images/events2.jpg" alt="" class="image-container">
+                        </div> 
+                        <div class="grid-image3">
+                            <img src="./src/images/events.jpg" alt="" class="image-container">
+                        </div> 
+                        <!-- <div class="grid-image4">
+                            <img src="./src/images/events7.jpg" alt="" class="image-container">
+                        </div> 
+                        <div class="grid-image5">
+                            <img src="./src/images/events3.jpg" alt="" class="image-container">
+                        </div> 
+                        <div class="grid-image6">
+                            <img src="./src/images/events5.jpg" alt="" class="image-container">
+                        </div>  -->
+                        <div class="grid-image7">
+                            <img src="./src/images/events8.jpg" alt="" class="image-container">
+                        </div> 
+                        <div class="grid-image8">
+                            <img src="./src/images/events4.jpg" alt="" class="image-container">
+                        </div> 
+                        <div class="grid-image9">
+                            <img src="./src/images/events6.jpg" alt="" class="image-container">
+                        </div> 
+                    </div>
+                </div>   
+            </div>
+
+        <!-- third button -->
+        <div class="row" x-show="open == 2">
+            <div class="col-12">
+                <div class="grid-container">
+                    <div class="grid-image1">
+                        <img src="./src/images/events1.jpg" alt="" class="image-container">
+                    </div> 
+                    <!-- <div class="grid-image2">
+                        <img src="./src/images/events2.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image3">
+                        <img src="./src/images/events.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image4">
+                        <img src="./src/images/events7.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image5">
+                        <img src="./src/images/events3.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image6">
+                        <img src="./src/images/events5.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image7">
+                        <img src="./src/images/events8.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image8">
+                        <img src="./src/images/events4.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image9">
+                        <img src="./src/images/events6.jpg" alt="" class="image-container">
+                    </div>  -->
+                </div>
+            </div>   
+        </div>
+
+        <!-- forth button -->
+        <div class="row" x-show="open == 3">
+            <div class="col-12">
+                <div class="grid-container">
+                    <!-- <div class="grid-image1">
+                        <img src="./src/images/events1.jpg" alt="" class="image-container">
+                    </div>  -->
+                    <div class="grid-image2">
+                        <img src="./src/images/events2.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image3">
+                        <img src="./src/images/events.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image4">
+                        <img src="./src/images/events7.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image5">
+                        <img src="./src/images/events3.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image6">
+                        <img src="./src/images/events5.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image7">
+                        <img src="./src/images/events8.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image8">
+                        <img src="./src/images/events4.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image9">
+                        <img src="./src/images/events6.jpg" alt="" class="image-container">
+                    </div> 
+                </div>
+            </div>   
+        </div>
+
             <div class="events-sec-btn-container">
                 <a href="#" class="events-sec-btn">View All Events</a>
             </div>
@@ -259,9 +362,9 @@
         <div class="container">
             <div class="row glimpse-row">
                 <div class="col-12 col-lg-6 glimpse">
-                    <!-- <div class="best-seller">
+                    <div class="best-seller">
                         <img src="./src/images/img3.jpg" class="image-container about-us-image" alt="Orange book">
-                    </div> -->
+                    </div>
                     <div class="book-image">
                         <img src="./src/images/glipse.jpg" class="image-container glimpse-image" alt="Orange book">
                     </div>
@@ -293,52 +396,60 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="publishing-service-text h-100">
                         <div class="card h-100">
-                            <div class="card-body">
+                            <a href="#book-marketing">
+                            <div class="card-body">                          
                                 <div class="img-container">
-                                    <img class="card-img-top" src="./src/images/Small-Business-Digital-Marketing-PNG-Image.png" alt="Card image">
+                                    <img class="card-img-top" src="./src/images/book-marketing.png" alt="Card image">
                                 </div>
                                 <h3 class="card-heading-text">Book Marketing</h3>
                                 <p class="card-text">Printing & Typesetting</p>
                             </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6  col-md-4 col-lg-3">
                     <div class="publishing-service-text h-100">
                         <div class="card h-100">
+                            <a href="#author-website">
                             <div class="card-body">
                                 <div class="img-container">
-                                    <img class="card-img-top" src="./src/images/12-2-web-design-png-images.png" alt="Card image">
+                                    <img class="card-img-top" src="./src/images/author-website.png" alt="Card image">
                                 </div>
                                 <h3 class="card-heading-text">Author Website</h3>
                                 <p class="card-text">Printing & Typesetting</p>
                             </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6  col-md-4 col-lg-3">
                     <div class="publishing-service-text h-100">
                         <div class="card h-100">
+                            <a href="#cover-designing">
                             <div class="card-body">
                                 <div class="img-container">
-                                    <img class="card-img-top" src="./src/images/pngwing.png" alt="Card image">
+                                    <img class="card-img-top" src="./src/images/cover-designing.png" alt="Card image">
                                 </div>
                                 <h3 class="card-heading-text">Cover Designing</h3>
                                 <p class="card-text">Printing & Typesetting</p>
                             </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6  col-md-4 col-lg-3">
                     <div class="publishing-service-text h-100">
                         <div class="card h-100"> 
-                            <div class="card-body">
-                                <div class="img-container">
-                                    <img class="card-img-top" src="./src/images/e-book-with-book-pages.png" alt="Card image">
+                            <a href="#e-book">
+                                <div class="card-body">
+                                    <div class="img-container">
+                                        <img class="card-img-top" src="./src/images/e-book.png" alt="Card image">
+                                    </div>
+                                    <h3 class="card-heading-text">eBook Conversion</h3>
+                                    <p class="card-text">Printing & Typesetting</p>
                                 </div>
-                                <h3 class="card-heading-text">eBook Conversion</h3>
-                                <p class="card-text">Printing & Typesetting</p>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>

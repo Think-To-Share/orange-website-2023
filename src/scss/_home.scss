@@ -310,6 +310,7 @@
                 transition: background-color 0.3s ease-in-out;
                
                 .card-body{
+                    cursor: pointer;
                     .card-heading-text{
                         text-align: center;
                         font-family: $primary-font;
@@ -336,7 +337,18 @@
                         color: #ffffff;
                     }
                 }
+                &.active{
+                    background-color: $secondary-color;
+                    .card-heading-text{
+                        color: #ffffff;
+                    }
+                    .card-text{
+                        color: #ffffff;
+                    }
+                }
+                
             }
+            
         }
     }
     
@@ -595,23 +607,31 @@
     }
     .publishing-service-text{
         .card{
+            a{
+                text-decoration: none;
+            }
             border-radius: 20px;
             border: none;
             box-shadow:0 0 90px #cececf94;
             transition: background-color 0.3s ease-in-out;
             .img-container{
                 .card-img-top{
-                 width: 100%;
-                 transition: transform .2s;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 70%;
+                    transition: transform .3s;
                  &:hover {
-                    -ms-transform: scale(1.2);
-                    -webkit-transform: scale(1.2); 
-                    transform: scale(1.2); 
+                    -ms-transform: scale(1.3);
+                    -webkit-transform: scale(1.3); 
+                    transform: scale(1.3); 
                   }
                 }
             }
             .card-body{
+               
                 .card-heading-text{
+                    margin-top: 20px;
                     text-align: center;
                     font-family: $primary-font;
                     font-weight: 700;
@@ -1144,7 +1164,8 @@
 //contact section
 .contact-section {
     padding: 20px;
-    background-image: url("../images/contact-form-background.png");
+    background-image: url("../images/contact-background.jpg");
+    background-size: auto;
     .form-heading {
         h2 {
             font-family: $primary-font;
