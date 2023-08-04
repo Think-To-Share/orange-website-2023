@@ -35,7 +35,7 @@
             text-align: center;
             font-size: 30px;
             color: #3d4043;
-            margin-bottom: 35px;
+            margin-bottom: 100px;
 
             @media (min-width:576px) {
                 font-size: 50px;
@@ -46,17 +46,70 @@
         font-family: $primary-font;
         row-gap: 150px;
         .blogs{
+            position: relative;    
             .blog-img{
                 border-radius: 25px;
                 width: 100%;
             }
+
+            .content {
+                position: relative;
+                overflow: hidden;
+                max-height: 0;
+                background-color: $secondary-color;
+                border-radius: 22px;
+                width: 95%;
+            }
+            
+            .inner {
+                padding: 1.5rem;
+                span{
+                   font-size: 11px;
+                   font-weight: 600;
+                }
+                text-align: left;
+                font-size: 15px;
+                font-family: $primary-font;
+                font-weight: 700;
+
+                @media  (min-width:576px) {
+                    span{
+                        font-size: 16px;
+                     }
+                     font-size: 20px;
+                }
+            }
+             &.content {
+                transition: max-height 500ms ease-in;
+               
+            }
+            
+            &:hover .content {
+                position: absolute;
+                top: 0%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            
+                color: #f0f0f0;
+            
+                max-height: 130px;
+
+                @media  (min-width:576px) {
+                    max-height: 300px;
+                }
+            }
         }
+        .blogs:hover .blog-img {
+            transform: translate(0, 18%); 
+        }
+
     }
     
 }
 
 .pagination{
     .pagination_section {
+        margin-top: 100px;
         padding: 20px;
         position: relative;
         text-align: center;

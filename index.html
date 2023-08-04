@@ -692,12 +692,37 @@
                         Know More About The Ffort Raichak?
                     </p>
                     <div class="brochure-btn-container">    
-                        <a href="#" class="brochure-sec-btn">  <img src="./src/images/pdf-img.png" alt=""> Download Brochure</a>                       
-                    </div>    
+                        <button id="myButton" class="brochure-sec-btn">  <img src="./src/images/pdf-img.png" alt=""> Download Brochure</button >                       
+                    </div> 
+                    <div id="myPopup" class="popup">
+                        <div class="popup-content">
+                            <h1 style="color:green;">
+                                  GeekforGeeks !
+                              </h1>
+                            <p>This is a popup box!</p>
+                            <button id="closePopup">
+                                  Close
+                              </button>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </section>
+    <script>
+        myButton.addEventListener("click", function () {
+            myPopup.classList.add("show");
+        });
+        closePopup.addEventListener("click", function () {
+            myPopup.classList.remove("show");
+        });
+        window.addEventListener("click", function (event) {
+            if (event.target == myPopup) {
+                myPopup.classList.remove("show");
+            }
+        });
+    </script>
     <!-- pdf section end -->
 
     <!-- blog section  -->
@@ -712,8 +737,8 @@
                                 <img src="./src/images/blog.png" alt="icon" class="blog-img">
                                                            
                             </div>
-                            <div class="overlay">
-                                <p class="overlay-text"> <span>June 27,2023</span> <br>Demystifying ebook formats: what every self-publisher needs to understand.</p>                                 
+                            <div class="content">
+                                <p class="inner"> <span>June 27,2023</span> <br>Demystifying ebook formats: what every self-publisher needs to understand.</p>                                 
                             </div> 
                         </a>
                     </div>
@@ -722,6 +747,9 @@
                             <div class="blog-img">
                                 <img src="./src/images/blog.png" alt="icon" class="blog-img">                            
                             </div>
+                            <div class="content">
+                                <p class="inner"> <span>June 27,2023</span> <br>Demystifying ebook formats: what every self-publisher needs to understand.</p>                                 
+                            </div> 
                         </a>
                     </div>
                     <div class="col-md-4 blog-box" >
@@ -729,6 +757,9 @@
                             <div class="blog-img">
                                 <img src="./src/images/blog.png" alt="icon" class="blog-img">                            
                             </div>
+                            <div class="content">
+                                <p class="inner"> <span>June 27,2023</span> <br>Demystifying ebook formats: what every self-publisher needs to understand.</p>                                 
+                            </div> 
                         </a>
                     </div>
                     <div class="col-md-4 blog-box" >
@@ -736,6 +767,9 @@
                             <div class="blog-img">
                                 <img src="./src/images/blog.png" alt="icon" class="blog-img">                            
                             </div>
+                            <div class="content">
+                                <p class="inner"> <span>June 27,2023</span> <br>Demystifying ebook formats: what every self-publisher needs to understand.</p>                                 
+                            </div> 
                         </a>
                     </div>
                     <div class="col-md-4 blog-box" >
@@ -743,6 +777,9 @@
                             <div class="blog-img">
                                 <img src="./src/images/blog.png" alt="icon" class="blog-img">                            
                             </div>
+                            <div class="content">
+                                <p class="inner"> <span>June 27,2023</span> <br>Demystifying ebook formats: what every self-publisher needs to understand.</p>                                 
+                            </div> 
                         </a>
                     </div>
                     <div class="col-md-4 blog-box" >
@@ -750,6 +787,9 @@
                             <div class="blog-img">
                                 <img src="./src/images/blog.png" alt="icon" class="blog-img">                            
                             </div>
+                            <div class="content">
+                                <p class="inner"> <span>June 27,2023</span> <br>Demystifying ebook formats: what every self-publisher needs to understand.</p>                                 
+                            </div> 
                         </a>
                     </div>
                 </div>
