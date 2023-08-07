@@ -1,0 +1,85 @@
+.site-header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f8f8f8;
+    margin-bottom: 50px;
+    .header-main {     
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-gap: 15px;
+        padding: 20px 2px;
+        
+        .logo-aria {
+            display: flex;
+
+            .logo {
+                max-width: 100%;
+                align-self: center;
+                
+            }
+        }
+        .menu-aria{
+            display: flex;
+            justify-content: flex-end;
+            ul{
+                list-style-type: none;
+                padding: 0;
+                display: inline;
+                margin: 0;
+                align-self: center;
+
+                @media (min-width:992px) {
+                    padding: 0 5px;  
+                }
+                li{
+                    display: inline-block;
+                    padding: 0 5px;
+                    position: relative;
+
+                    a{
+                        float: none;
+                        text-decoration: none;                   
+                        font-size: 17px;
+                        font-family: $primary-font;
+                        font-weight: 300;
+                        color: #333333;
+                        padding: 6px 15px;
+                    }
+                }
+            }
+            .get{   
+                margin-top: 10px;
+                text-align: center;
+                @media (min-width:576px) {
+                    text-align: left;
+                }
+                .get-btn{
+                    text-decoration: none;
+                    text-align: center;
+                    color: #ffffff;
+                    background-color: $primary-color;
+                    @include font-size(1.0rem);
+                    padding: 8px 55px;
+                    display: inline-block;
+                    font-family: $primary-font;
+                    font-weight: 300;
+                    border-radius: 50px;
+                    border:1px solid $primary-color;
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        background-color: transparent;
+                        color: $primary-color;
+                        border:1px solid $primary-color;
+                    }
+                    svg{
+                        fill: #ffffff;
+                    }
+                }
+            }
+        }
+       
+
+    }
+}
