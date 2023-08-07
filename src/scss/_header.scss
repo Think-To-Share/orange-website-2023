@@ -1,10 +1,11 @@
 .site-header {
     width: 100%;
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     background-color: #f8f8f8;
-    margin-bottom: 50px;
+    z-index: 2000;
+
     .header-main {     
         display: grid;
         grid-template-columns: 1fr 3fr;
@@ -52,8 +53,12 @@
             .get{   
                 margin-top: 10px;
                 text-align: center;
+                display: none;
                 @media (min-width:576px) {
                     text-align: left;
+                }
+                @media (min-width:1200px) {
+                    display: inline;
                 }
                 .get-btn{
                     text-decoration: none;

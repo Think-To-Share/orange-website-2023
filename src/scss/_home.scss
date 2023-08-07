@@ -5,7 +5,6 @@
 
 //About Us start
 .about-us{
-    margin-top: 69px;
     margin-bottom: 50px;
     .about-heading{
         font-family: $primary-font;
@@ -1065,7 +1064,7 @@
         display: inline-flex;
         align-content: space-around;
         .blog-area{
-            row-gap: 140px;
+            row-gap: 160px;
             .blog-box{
                 position: relative;        
                 .blog-img{
@@ -1116,7 +1115,7 @@
                 }
             }
             .blog-box:hover .blog-img {
-                transform: translate(0, 18%); 
+                transform: translate(0, 35%); 
             }
         }
        

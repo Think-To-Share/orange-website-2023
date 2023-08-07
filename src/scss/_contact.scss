@@ -5,10 +5,10 @@
 
 .contact-page-top-section{
     background-image: url("../images/blog-title.png");  
-    padding: 120px;
+    padding: 75px;
     margin-bottom: 60px;
     @media (min-width:576px) {
-        padding: 190px; 
+        padding: 140px; 
     }
 
     .section-heading{
@@ -55,7 +55,7 @@
                 .left-side{
                     .contact-icon{
                         .icon-img{
-                            
+                          max-width: none;  
                         }
                     }
                 }
