@@ -1064,12 +1064,14 @@
         display: inline-flex;
         align-content: space-around;
         .blog-area{
-            row-gap: 160px;
+            row-gap: 140px;
             .blog-box{
                 position: relative;        
-                .blog-img{
-                    width: 100%;
-                    border-radius: 22px;             
+                .blog-img{     
+                    img{
+                        width: 100%;
+                        border-radius: 22px;
+                    }             
                 }
                 .content {
                     position: relative;
@@ -1115,7 +1117,7 @@
                 }
             }
             .blog-box:hover .blog-img {
-                transform: translate(0, 35%); 
+                transform: translate(0, 40%); 
             }
         }
        
@@ -1227,8 +1229,16 @@
 //contact section
 .contact-section {
     padding: 20px;
-    background-image: url("../images/contact-background.jpg");
+    background-image: url("../images/contact-background.png");
     background-size: auto;
+    // background-position: center;
+
+    @media (min-width:768px) {
+        padding: 90px;
+        background-size: cover;
+        background-position: center;
+     }
+
     .form-heading {
         h2 {
             font-family: $primary-font;
@@ -1261,7 +1271,7 @@
             width: 100%;
             padding: 8px 18px;
             border-color: #2e2f3029;
-            @media (min-width:576px) {
+            @media (min-width:992px) {
                 padding: 16px 35px; 
             }
         }
@@ -1274,6 +1284,14 @@
                 padding: 16px 35px; 
             }
         }
+
+        .field-gap{
+            margin-bottom: 15px;
+            @media (min-width:768px) {
+                margin-bottom: 0;
+            }
+        }
+
         .submit-btn-container{
             width: 100%;
             margin-top: 20px;
@@ -1284,8 +1302,8 @@
             text-align: center;
             color: #ffffff;
             background-color: $secondary-color;
-            @include font-size(0.9rem);  
-            padding: 15px 35px;
+            @include font-size(0.7rem);  
+            padding: 10px 20px;
             display: inline-block;
             font-family: $primary-font;
             font-weight: 400;
@@ -1300,7 +1318,12 @@
             }    
             
             @media (min-width:576px) {
-                @include font-size(1.1rem);  
+                @include font-size(1.0rem);  
+                padding: 12px 45px;
+            }
+
+            @media (min-width:768px) {
+                @include font-size(1.2rem);  
                 padding: 15px 65px;
             }
         }
