@@ -139,6 +139,22 @@
                 padding: 16px 35px; 
             }
         }
+
+        .field{
+            width: 100%;
+            display: block;
+            margin-bottom: 15px;
+            @media (min-width:768px) {
+                margin-bottom: 10px;
+                display: inline-flex;
+                column-gap: 5px;
+            }
+            .field-gap{
+                margin-bottom: 10px;
+            }
+        }
+
+        
         .submit-btn-container{
             width: 100%;
             margin-top: 20px;

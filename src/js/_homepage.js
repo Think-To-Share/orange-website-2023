@@ -38,7 +38,7 @@ if(document.querySelector(".distribution-sec")){
              
             },
             992:{
-                items: 6,
+                items: 5,
             },
                      
         },
