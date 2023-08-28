@@ -165,6 +165,10 @@
         padding-left: 10px;
         padding-right: 10px;
         .copyright-text{
+            a{
+                text-decoration: none;
+                color: #e4e4e4;
+            }
             margin: 0;
             font-family: $secondary-font;
             @include font-size(0.6rem);

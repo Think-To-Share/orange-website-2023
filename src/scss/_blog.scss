@@ -238,10 +238,11 @@
                 padding: 10px;
 
                 h1,h2,h3,h4,h5,h6{
-                    margin-bottom: 15px;
+                    margin-bottom: 1rem;
                 }
-                p{  
-                    margin: 0;
+                p{ 
+                    margin: 0; 
+                    margin-bottom: 1rem !important;
                     font-weight: 400;
                     font-size: 15px;
                     text-align: justify;
@@ -257,6 +258,7 @@
                 ul{
                     li{
                         margin-top: 15px;
+                        margin-bottom: 1rem;
                         font-size: 15px;
                         text-align: justify;
                         @media (min-width:576px) {
@@ -268,7 +270,7 @@
 
                 ol{
                     li{
-                        margin-bottom: 15px;
+                        margin-bottom: 1rem;
                         font-size: 15px;
                         text-align: justify;
                         @media (min-width:576px) {
