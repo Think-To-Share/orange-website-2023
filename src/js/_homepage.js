@@ -1,4 +1,5 @@
 import { tns } from 'tiny-slider/src/tiny-slider'
+import { gsap } from "gsap";
 
 if (document.querySelector('.client-section')) {
     tns({
@@ -73,3 +74,12 @@ if(document.querySelector(".author-sec")){
         },
     })
 }
+
+window.addEventListener('load', () => {
+    gsap.from('.book-images .book-image', {
+        x: -50,
+        autoAlpha: 0,
+        stagger: 0.3,
+        duration: 0.8
+    })
+})
