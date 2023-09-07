@@ -8,8 +8,7 @@
     position: relative;
    .banner-image{
     width: 100%;
-    display: none;
-    
+    // display: none;
     @media (min-width:992px) {
         display: block; 
         margin-bottom: 50px;
@@ -49,7 +48,7 @@
 //About Us start
 .about-us{
     margin-bottom: 50px;
-
+    margin-top: 20px;
     .row{
         flex-wrap: nowrap;
         // width: 100%;
@@ -165,6 +164,8 @@
         padding-bottom: 15px;
     }
     .new-releases-text{
+        padding-left: 10px;
+        padding-right: 10px;
         .card{
             border: 1px solid #f0f0f0;
             background-color: #f0f0f0;
@@ -392,16 +393,23 @@
                         font-family: $primary-font;
                         font-weight: 700;
                         color: #333333;
-                        @include font-size(1.2rem);
+                        @include font-size(0.8rem);
                         transition: color 0.3s ease-in-out;
+
+                        @media (min-width:576px) {
+                            @include font-size(1.2rem);
+                        }
                     }
                     .card-text{
                         text-align: center;
                         font-family: $primary-font;
                         font-weight: 400;
                         color: #4e4e4e;
-                        @include font-size(0.9rem);
+                        @include font-size(0.7rem);
                         transition: color 0.3s ease-in-out;
+                        @media (min-width:576px) {
+                            @include font-size(0.9rem);
+                        }
                     }
                 }
                 &:hover{
@@ -610,7 +618,10 @@
                 }
             }
         }
-        
+        .glimpse-second{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
         .glimpse-sec-heading{
             font-family: $primary-font;
             font-weight: 800;
@@ -642,6 +653,10 @@
             @include font-size(2rem);
             color: #3d4043;
             padding-top: 10px;
+            text-align: center;
+            @media (min-width:576px) {
+                text-align: left;
+            }
         }
         .glimpse-sec-btn-container{
             width: 100%;
@@ -895,7 +910,7 @@
     .tns-outer {
         position: relative;
         .tns-nav {
-            display: none;
+            display: flex;
             justify-content: center;
             position: absolute;
             bottom: -50px;
@@ -966,7 +981,7 @@
     .tns-outer {
         position: relative;
         .tns-nav {
-            display: none;
+            display: flex;
             justify-content: center;
             position: absolute;
             bottom: -50px;

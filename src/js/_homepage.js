@@ -17,7 +17,7 @@ if(document.querySelector(".distribution-sec")){
     tns({
         container:".distribution-sec .slider-container",
         items:6,
-        nav:true,
+        nav:false,
         controls:true,
         autoplay: true,
         autoplayTimeout:8000,
@@ -29,6 +29,7 @@ if(document.querySelector(".distribution-sec")){
         responsive: {
             320: {
               items: 1,  
+              nav:true,
             },
             576:{
                 items:2,
@@ -36,6 +37,7 @@ if(document.querySelector(".distribution-sec")){
             768: {
               items: 4,
               controls: true,
+              nav:false,
              
             },
             992:{
@@ -59,17 +61,49 @@ if(document.querySelector(".author-sec")){
         
         responsive: {
             320: {
-              items: 1,  
+              items: 2,
+
             },
             576:{
-                items:2,
+                items:2,      
             },
             768: {
               items: 4,
              
             },
             992:{
-                items: 6,
+                items: 6,     
+            },        
+        },
+    })
+}
+
+if(document.querySelector(".new-releases-sec")){
+    tns({
+        container:".new-releases-sec .slider-container",
+        items:4,
+        nav:false,
+        gutter: 20,
+        controls:false,
+        autoplay: true,
+        autoplayTimeout:8000,
+        autoplayButtonOutput: false,
+        mouseDrag:true,
+        
+        responsive: {
+            320: {
+              items: 1,
+
+            },
+            576:{
+                items:2,      
+            },
+            768: {
+              items: 3,
+             
+            },
+            992:{
+                items: 4,     
             },        
         },
     })
