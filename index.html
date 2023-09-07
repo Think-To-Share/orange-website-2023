@@ -350,7 +350,7 @@
             <h2 class="events-sec-heading">Our Events</h2>
             <p class="events-sec-sub-heading">Be the readable content of a page when looking at its layout.</p>
             <div class="row evnt-content gy-5 justify-content-center">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="events-content-text h-100">                        
                         <div class="card h-100  " x-on:click="open = 0" :class="{ 'active': open === 0 }">
                             <div class="card-body">                               
@@ -360,7 +360,7 @@
                         </div>                       
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="events-content-text h-100">  
                         <div class="card h-100 " x-on:click="open = 1" :class="{ 'active': open === 1 }">
                             <div class="card-body">                               
@@ -370,7 +370,7 @@
                         </div>                     
                     </div>
                 </div>
-                <div class="col-12 col-sm-6  col-md-4 col-lg-3">
+                <!-- <div class="col-12 col-sm-6  col-md-4 col-lg-3">
                     <div class="events-content-text h-100">
                         <div class="card h-100 " x-on:click="open = 2" :class="{ 'active': open === 2 }">
                             <div class="card-body" >                             
@@ -389,7 +389,7 @@
                             </div>
                         </div>   
                     </div>
-                </div>
+                </div> -->
             </div>
   <!-- 1st button  -->
             <div class="row" x-show="open == 0">
@@ -434,16 +434,13 @@
                         <div class="grid-image1">
                             <img src="./src/images/events1.jpg" alt="" class="image-container">
                         </div> 
-                        <div class="grid-image1">
-                            <img src="./src/images/events1.jpg" alt="" class="image-container">
-                        </div> 
                         <div class="grid-image2">
                             <img src="./src/images/events2.jpg" alt="" class="image-container">
                         </div> 
                         <div class="grid-image3">
                             <img src="./src/images/events.jpg" alt="" class="image-container">
                         </div> 
-                        <!-- <div class="grid-image4">
+                        <div class="grid-image4">
                             <img src="./src/images/events7.jpg" alt="" class="image-container">
                         </div> 
                         <div class="grid-image5">
@@ -451,7 +448,7 @@
                         </div> 
                         <div class="grid-image6">
                             <img src="./src/images/events5.jpg" alt="" class="image-container">
-                        </div>  -->
+                        </div> 
                         <div class="grid-image7">
                             <img src="./src/images/events8.jpg" alt="" class="image-container">
                         </div> 
@@ -466,47 +463,12 @@
             </div>
 
         <!-- third button -->
-        <div class="row" x-show="open == 2">
+        <!-- <div class="row" x-show="open == 2">
             <div class="col-12">
                 <div class="grid-container">
                     <div class="grid-image1">
                         <img src="./src/images/events1.jpg" alt="" class="image-container">
                     </div> 
-                    <!-- <div class="grid-image2">
-                        <img src="./src/images/events2.jpg" alt="" class="image-container">
-                    </div> 
-                    <div class="grid-image3">
-                        <img src="./src/images/events.jpg" alt="" class="image-container">
-                    </div> 
-                    <div class="grid-image4">
-                        <img src="./src/images/events7.jpg" alt="" class="image-container">
-                    </div> 
-                    <div class="grid-image5">
-                        <img src="./src/images/events3.jpg" alt="" class="image-container">
-                    </div> 
-                    <div class="grid-image6">
-                        <img src="./src/images/events5.jpg" alt="" class="image-container">
-                    </div> 
-                    <div class="grid-image7">
-                        <img src="./src/images/events8.jpg" alt="" class="image-container">
-                    </div> 
-                    <div class="grid-image8">
-                        <img src="./src/images/events4.jpg" alt="" class="image-container">
-                    </div> 
-                    <div class="grid-image9">
-                        <img src="./src/images/events6.jpg" alt="" class="image-container">
-                    </div>  -->
-                </div>
-            </div>   
-        </div>
-
-        <!-- forth button -->
-        <div class="row" x-show="open == 3">
-            <div class="col-12">
-                <div class="grid-container">
-                    <!-- <div class="grid-image1">
-                        <img src="./src/images/events1.jpg" alt="" class="image-container">
-                    </div>  -->
                     <div class="grid-image2">
                         <img src="./src/images/events2.jpg" alt="" class="image-container">
                     </div> 
@@ -533,7 +495,42 @@
                     </div> 
                 </div>
             </div>   
-        </div>
+        </div> -->
+
+        <!-- forth button -->
+        <!-- <div class="row" x-show="open == 3">
+            <div class="col-12">
+                <div class="grid-container">
+                    <div class="grid-image1">
+                        <img src="./src/images/events1.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image2">
+                        <img src="./src/images/events2.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image3">
+                        <img src="./src/images/events.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image4">
+                        <img src="./src/images/events7.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image5">
+                        <img src="./src/images/events3.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image6">
+                        <img src="./src/images/events5.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image7">
+                        <img src="./src/images/events8.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image8">
+                        <img src="./src/images/events4.jpg" alt="" class="image-container">
+                    </div> 
+                    <div class="grid-image9">
+                        <img src="./src/images/events6.jpg" alt="" class="image-container">
+                    </div> 
+                </div>
+            </div>   
+        </div> -->
 
             <div class="events-sec-btn-container">
                 <a href="#" class="events-sec-btn">View All Events</a>

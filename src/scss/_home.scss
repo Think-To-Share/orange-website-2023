@@ -464,9 +464,11 @@
                 height: 100%;
                 width: 100%;
                 border-radius: 05px;
+                object-fit: cover;
               
                 @media (min-width:576px) {
                     border-radius: 20px;
+                    object-fit: cover;
                 }
                
             }
@@ -478,22 +480,24 @@
                 height: 100%;
                 width: 100%;
                 border-radius: 05px;
-
+                object-fit: cover;
                 @media (min-width:576px) {
                     border-radius: 20px;
+                    object-fit: cover;
                 }
             }
         }
         .grid-image3{
-            grid-row: span 3;
+            grid-row: span 2;
             overflow: hidden;
             .image-container{
                 height: 100%;
                 width: 100%;
                 border-radius: 05px;
-
+                object-fit: cover;
                 @media (min-width:576px) {
                     border-radius: 20px;
+                    object-fit: cover;
                 }
             }
         }
@@ -502,9 +506,10 @@
                 width: 100%;
                 height: 100%;
                 border-radius: 05px;
-
+                object-fit: cover;
                 @media (min-width:576px) {
                     border-radius: 20px;
+                    object-fit: cover;
                 }
             }
         }
@@ -515,9 +520,10 @@
                 height: 100%;
                 width: 100%;
                 border-radius: 05px;
-
+                object-fit: cover;
                 @media (min-width:576px) {
                     border-radius: 20px;
+                    object-fit: cover;
                 }
             }
         }
@@ -528,20 +534,24 @@
                 width: 100%;
                 height: 100%;
                 border-radius: 05px;
-
+                object-fit: cover;
                 @media (min-width:576px) {
                     border-radius: 20px;
+                    object-fit: cover;
                 }
             }
         }
         .grid-image7{
+            grid-row: span 2;
+            overflow: hidden;
             .image-container{
                 width: 100%;
                 height: 100%;
                 border-radius: 05px;
-
+                object-fit: cover;
                 @media (min-width:576px) {
                     border-radius: 20px;
+                    object-fit: cover;
                 }
             }
         }
@@ -550,20 +560,23 @@
                 width: 100%;
                 height: 100%;
                 border-radius: 05px;
-
+                object-fit: cover;
                 @media (min-width:576px) {
                     border-radius: 20px;
+                    object-fit: cover;
                 }
             }
         }
         .grid-image9{
+           
             .image-container{
                 width: 100%;
                 height: 100%;
                 border-radius: 05px;
-
+                object-fit: cover;
                 @media (min-width:576px) {
                     border-radius: 20px;
+                    object-fit: cover;
                 }
             }
         }
