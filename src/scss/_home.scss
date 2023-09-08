@@ -312,7 +312,7 @@
     }
     .new-releases-btn-container{
             width: 100%;
-            margin-top: 40px;
+            margin-top: 25px;
             text-align: center;
             .new-releases-btn{
                 text-decoration: none;
@@ -978,6 +978,12 @@
     text-align: center;
     padding-top: 80px;
     padding-bottom: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+
     .tns-outer {
         position: relative;
         .tns-nav {
@@ -1014,6 +1020,9 @@
         padding-bottom: 25px;
     }
     .slides-container{
+        flex-grow: 1; 
+        
+        max-height: 100%;
         .slides{
             .slide{
                 .slide-main{
@@ -1341,11 +1350,15 @@
     background-image: url("../images/contact-background.png");
     background-size: auto;
     // background-position: center;
-
+   
     @media (min-width:768px) {
         padding: 90px;
         background-size: cover;
         background-position: center;
+     }
+
+     .contact-middle{
+        justify-content: space-around;
      }
 
     .form-heading {

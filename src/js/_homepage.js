@@ -10,6 +10,7 @@ if (document.querySelector('.client-section')) {
         controls:false,
         autoplayTimeout:8000,
         autoplayButtonOutput: false,
+        autoHeight: true,
     })
 }
 
