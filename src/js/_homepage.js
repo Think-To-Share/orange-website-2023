@@ -87,10 +87,10 @@ if(document.querySelector(".new-releases-sec")){
         gutter: 20,
         controls:false,
         autoplay: true,
-        autoplayTimeout:8000,
+        autoplayTimeout:4000,
         autoplayButtonOutput: false,
         mouseDrag:true,
-        
+        speed: 400,
         responsive: {
             320: {
               items: 1,
