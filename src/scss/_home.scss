@@ -6,13 +6,19 @@
 //banner section 
 .banner-top{
     position: relative;
-   .banner-image{
-    width: 100%;
-    // display: none;
+    overflow: hidden;
+
     @media (min-width:992px) {
-        display: block; 
         margin-bottom: 50px;
-        
+    }
+
+   .banner-image-container{
+        @media (min-width:992px) {
+            display: block; 
+        }
+
+        .banner-image {
+            width: 100%;
         }
     }
 

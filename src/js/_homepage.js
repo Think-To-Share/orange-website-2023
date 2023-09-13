@@ -111,10 +111,33 @@ if(document.querySelector(".new-releases-sec")){
 }
 
 window.addEventListener('load', () => {
-    gsap.from('.book-images .book-image', {
-        x: -50,
+    const tl = gsap.timeline()
+
+    tl.from('.book-images .book-image:nth-child(1)', {
+        x: '-100vw',
         autoAlpha: 0,
-        stagger: 0.3,
-        duration: 0.8
+        duration: 1, 
+        ease: "circ.out"
     })
+
+    tl.from('.book-images .book-image:nth-child(4)', {
+        x: '100vw',
+        autoAlpha: 0,
+        duration: 1, 
+        ease: "circ.out"
+    }, "<")
+
+    tl.from('.book-images .book-image:nth-child(2)', {
+        y: '-100vh',
+        autoAlpha: 0,
+        duration: 1, 
+        ease: "circ.out"
+    }, "<+0.5")
+
+    tl.from('.book-images .book-image:nth-child(3)', {
+        y: '100vh',
+        autoAlpha: 0,
+        duration: 1, 
+        ease: "circ.out"
+    }, "<")
 })
