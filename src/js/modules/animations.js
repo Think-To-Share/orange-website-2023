@@ -123,7 +123,7 @@ function HomepageAnimations() {
     scrollTrigger: {
       trigger: ".new-releases-sec",
       start: "top center",
-      markers:true
+      markers: true,
     },
   });
 
@@ -140,11 +140,15 @@ function HomepageAnimations() {
     ease: "back.out(2)",
   });
 
-  releaseTl.from(".new-releases-sec .slider-container", {
-    autoAlpha: 0,
-    duration: 0.2,
-    ease: "back.out(2)",
-  });
+  // releaseTl.from(
+  //   ".new-releases-sec .slider-container",
+  //   {
+  //     autoAlpha: 0,
+  //     duration: 0.2,
+  //     ease: "back.out(2)",
+  //   },
+   
+  // );
 
   //   Event section
 
@@ -175,7 +179,7 @@ function HomepageAnimations() {
     ".events-sec .event-content .event-btn:nth-child(1)",
     {
       x: "-100",
-      //   autoAlpha: 0,
+      autoAlpha: 0,
       duration: 1,
       ease: "sine.out",
     },
@@ -185,26 +189,26 @@ function HomepageAnimations() {
     ".events-sec .event-content .event-btn:nth-child(2)",
     {
       x: "100",
-      //   autoAlpha: 0,
+      autoAlpha: 0,
       duration: 1,
       ease: "sine.out",
     },
     "<"
   );
-  eventsTl.from(".events-sec .grid-container .grid-images", {
-    duration: 0.2,
-    autoAlpha: 0,
-    y: 40,
-    ease: "power1.out",
-    stagger: {
-      // wrap advanced options in an object
-      each: 0.1,
-      from: "center",
-      grid: "auto",
-      ease: "none",
-      axis: null,
-    },
-  });
+  // eventsTl.from(".events-sec .grid-container ", {
+  //   duration: 0.2,
+  //   autoAlpha: 0,
+  //   y: 40,
+  //   ease: "power1.out",
+  //   // stagger: {
+  //   //   // wrap advanced options in an object
+  //   //   each: 0.1,
+  //   //   from: "center",
+  //   //   grid: "auto",
+  //   //   ease: "none",
+  //   //   axis: null,
+  //   // },
+  // });
   //   eventsTl.from(
   //     ".events-sec .grid-container .grid-image5",
   //     {
@@ -383,7 +387,8 @@ function HomepageAnimations() {
   });
 
   blogTl.from(".blogs-sec .blogs-sec-heading", {
-    y: "-150",
+    y: "-100",
+    autoAlpha: 0,
     duration: 1,
     ease: "circ.out",
   });
@@ -408,7 +413,7 @@ function HomepageAnimations() {
   faqTl.from(
     ".faq-section",
     {
-      x:"150",
+      x: "50",
       autoAlpha: 0,
       duration: 1,
       ease: "circ.out",
@@ -424,7 +429,7 @@ function HomepageAnimations() {
     },
   });
   contactTl.from(".contact-section .contact-middle", {
-    y: "-200",
+    y: "-500",
     autoAlpha: 0,
     duration: 1,
     ease: "bounce.out",
