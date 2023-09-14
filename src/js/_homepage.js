@@ -1,5 +1,5 @@
 import { tns } from 'tiny-slider/src/tiny-slider'
-import { gsap } from "gsap";
+import { HomepageAnimations } from './modules/animations';
 
 if (document.querySelector('.client-section')) {
     tns({
@@ -111,33 +111,5 @@ if(document.querySelector(".new-releases-sec")){
 }
 
 window.addEventListener('load', () => {
-    const tl = gsap.timeline()
-
-    tl.from('.book-images .book-image:nth-child(1)', {
-        x: '-100vw',
-        autoAlpha: 0,
-        duration: 1, 
-        ease: "circ.out"
-    })
-
-    tl.from('.book-images .book-image:nth-child(4)', {
-        x: '100vw',
-        autoAlpha: 0,
-        duration: 1, 
-        ease: "circ.out"
-    }, "<")
-
-    tl.from('.book-images .book-image:nth-child(2)', {
-        y: '-100vh',
-        autoAlpha: 0,
-        duration: 1, 
-        ease: "circ.out"
-    }, "<+0.5")
-
-    tl.from('.book-images .book-image:nth-child(3)', {
-        y: '100vh',
-        autoAlpha: 0,
-        duration: 1, 
-        ease: "circ.out"
-    }, "<")
+    HomepageAnimations()
 })

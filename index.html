@@ -498,7 +498,7 @@
             <h2 class="events-sec-heading">Our Events</h2>
             <p class="events-sec-sub-heading">Be the readable content of a page when looking at its layout.</p>
             <div class="row evnt-content gy-5 justify-content-center">
-                <div class="col-6 col-sm-6 col-md-4 col-lg-4">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-4 event-btn">
                     <div class="events-content-text h-100">                        
                         <div class="card h-100  " x-on:click="open = 0" :class="{ 'active': open === 0 }">
                             <div class="card-body">                               
@@ -508,7 +508,7 @@
                         </div>                       
                     </div>
                 </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-4">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-4 event-btn">
                     <div class="events-content-text h-100">  
                         <div class="card h-100 " x-on:click="open = 1" :class="{ 'active': open === 1 }">
                             <div class="card-body">                               
@@ -543,31 +543,31 @@
             <div class="row" x-show="open == 0">
                 <div class="col-12">
                     <div class="grid-container">
-                        <div class="grid-image1">
+                        <div class="grid-image1 grid-images">
                             <img src="./src/images/events1.jpg" alt="" class="image-container">
                         </div> 
-                        <div class="grid-image2">
+                        <div class="grid-image2 grid-images">
                             <img src="./src/images/events2.jpg" alt="" class="image-container">
                         </div> 
-                        <div class="grid-image3">
+                        <div class="grid-image3 grid-images">
                             <img src="./src/images/events.jpg" alt="" class="image-container">
                         </div> 
-                        <div class="grid-image4">
+                        <div class="grid-image4 grid-images">
                             <img src="./src/images/events7.jpg" alt="" class="image-container">
                         </div> 
-                        <div class="grid-image5">
+                        <div class="grid-image5 grid-images">
                             <img src="./src/images/events3.jpg" alt="" class="image-container">
                         </div> 
-                        <div class="grid-image6">
+                        <div class="grid-image6 grid-images">
                             <img src="./src/images/events5.jpg" alt="" class="image-container">
                         </div> 
-                        <div class="grid-image7">
+                        <div class="grid-image7 grid-images">
                             <img src="./src/images/events8.jpg" alt="" class="image-container">
                         </div> 
-                        <div class="grid-image8">
+                        <div class="grid-image8 grid-images">
                             <img src="./src/images/events4.jpg" alt="" class="image-container">
                         </div> 
-                        <div class="grid-image9">
+                        <div class="grid-image9 grid-images">
                             <img src="./src/images/events6.jpg" alt="" class="image-container">
                         </div> 
                     </div>
@@ -579,31 +579,31 @@
             <div class="row" x-show="open == 1">
                 <div class="col-12">
                     <div class="grid-container">
-                        <div class="grid-image1">
+                        <div class="grid-image1 grid-images">
                             <img src="./src/images/events1.jpg" alt="" class="image-container">
                         </div> 
-                        <div class="grid-image2">
+                        <div class="grid-image2 grid-images">
                             <img src="./src/images/events2.jpg" alt="" class="image-container">
                         </div> 
-                        <div class="grid-image3">
+                        <div class="grid-image3 grid-images">
                             <img src="./src/images/events.jpg" alt="" class="image-container">
                         </div> 
-                        <div class="grid-image4">
+                        <div class="grid-image4 grid-images">
                             <img src="./src/images/events7.jpg" alt="" class="image-container">
                         </div> 
-                        <div class="grid-image5">
+                        <div class="grid-image5 grid-images">
                             <img src="./src/images/events3.jpg" alt="" class="image-container">
                         </div> 
-                        <div class="grid-image6">
+                        <div class="grid-image6 grid-images">
                             <img src="./src/images/events5.jpg" alt="" class="image-container">
                         </div> 
-                        <div class="grid-image7">
+                        <div class="grid-image7 grid-images">
                             <img src="./src/images/events8.jpg" alt="" class="image-container">
                         </div> 
-                        <div class="grid-image8">
+                        <div class="grid-image8 grid-images">
                             <img src="./src/images/events4.jpg" alt="" class="image-container">
                         </div> 
-                        <div class="grid-image9">
+                        <div class="grid-image9 grid-images">
                             <img src="./src/images/events6.jpg" alt="" class="image-container">
                         </div> 
                     </div>
@@ -723,8 +723,8 @@
         <div class="container">
             <h2 class="publishing-service-heading">Publishing Services</h2>
             <p class="publishing-service-sub-heading">It is a long established fact that a reader will be distracted</p>
-            <div class="row gy-5 justify-content-center">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="row gy-5 justify-content-center publishing-service-container">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 publishing-service-item">
                     <div class="publishing-service-text h-100">
                         <div class="card h-100">
                             <a href="#book-marketing">
@@ -739,7 +739,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6  col-md-4 col-lg-3">
+                <div class="col-12 col-sm-6  col-md-4 col-lg-3 publishing-service-item">
                     <div class="publishing-service-text h-100">
                         <div class="card h-100">
                             <a href="#author-website">
@@ -754,7 +754,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6  col-md-4 col-lg-3">
+                <div class="col-12 col-sm-6  col-md-4 col-lg-3 publishing-service-item">
                     <div class="publishing-service-text h-100">
                         <div class="card h-100">
                             <a href="#cover-designing">
@@ -769,7 +769,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6  col-md-4 col-lg-3">
+                <div class="col-12 col-sm-6  col-md-4 col-lg-3 publishing-service-item">
                     <div class="publishing-service-text h-100">
                         <div class="card h-100"> 
                             <a href="#e-book">
