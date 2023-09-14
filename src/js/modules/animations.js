@@ -123,7 +123,7 @@ function HomepageAnimations() {
     scrollTrigger: {
       trigger: ".new-releases-sec",
       start: "top center",
-      markers: true,
+      // markers: true,
     },
   });
 
@@ -403,23 +403,23 @@ function HomepageAnimations() {
 
   // faq-section
 
-  const faqTl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".faq-section",
-      start: "top center",
-    },
-  });
+  // const faqTl = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: ".faq-section",
+  //     start: "top center",
+  //   },
+  // });
 
-  faqTl.from(
-    ".faq-section",
-    {
-      x: "50",
-      autoAlpha: 0,
-      duration: 1,
-      ease: "circ.out",
-    },
-    "<+0.5"
-  );
+  // faqTl.from(
+  //   ".faq-section",
+  //   {
+  //     x: "50",
+  //     autoAlpha: 0,
+  //     duration: 1,
+  //     ease: "circ.out",
+  //   },
+  //   "<+0.5"
+  // );
 
   // contact-section
   const contactTl = gsap.timeline({
