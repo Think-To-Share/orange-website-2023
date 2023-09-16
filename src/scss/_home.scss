@@ -65,6 +65,9 @@
     font-weight: 800;
     @include font-size(1.5rem);
     color: #3d4043;
+      @media (min-width: 576px) {
+        @include font-size(1.8rem);
+      }
   }
   .about-sub-heading {
     font-family: $primary-font;
@@ -72,6 +75,9 @@
     @include font-size(1.2rem);
     color: #333333;
     margin: 0;
+    @media (min-width: 576px) {
+      @include font-size(1.5rem);
+    }
   }
   .about-sub-text {
     font-family: $primary-font;
@@ -80,6 +86,7 @@
     color: $primary-color;
     margin: 0;
     padding-top: 14px;
+   
   }
   .about-text {
     padding-top: 8px;
@@ -162,6 +169,37 @@
     @include font-size(2.1rem);
     color: #3d4043;
   }
+
+  .tns-outer {
+    position: relative;
+    .tns-nav {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      width: 100%;
+      @media (min-width: 768px) {
+        display: flex;
+      }
+      button {
+        padding: 5px;
+        border: none;
+        background-color: change-color($color: $primary-color, $alpha: 0.5);
+        border-radius: 50%;
+        box-shadow: none;
+        margin-left: 8px;
+        &:first-child {
+          margin-left: 0;
+        }
+        &.tns-nav-active {
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+
+
   .new-releases-sub-heading {
     text-align: center;
     font-family: $primary-font;
@@ -313,7 +351,7 @@
   }
   .new-releases-btn-container {
     width: 100%;
-    margin-top: 25px;
+    margin-top: 70px;
     text-align: center;
     .new-releases-btn {
       text-decoration: none;
@@ -397,7 +435,7 @@
             transition: color 0.3s ease-in-out;
 
             @media (min-width: 576px) {
-              @include font-size(1.2rem);
+              @include font-size(1.5rem);
             }
           }
           .card-text {
@@ -597,6 +635,7 @@
   margin-bottom: 50px;
   .glimpse-row {
     align-items: center;
+    
     .glimpse {
       display: flex;
       .best-seller {
@@ -622,15 +661,23 @@
       font-weight: 800;
       @include font-size(2.5rem);
       color: #3d4043;
+      @media (min-width: 576px) {
+      
+      }
     }
     .glimpse-sec-sub-heading {
       font-family: $primary-font;
       font-weight: 400;
       @include font-size(1.2rem);
       color: #3d4043;
+      
       .author-name {
         color: $primary-color;
       }
+      @media (min-width: 576px) {
+      
+      }
+     
     }
     .glimpse-sec-text {
       color: #56595b;
@@ -807,7 +854,7 @@
   .tns-outer {
     position: relative;
     .tns-nav {
-      display: none;
+      display: flex;
       justify-content: center;
       position: absolute;
       bottom: -50px;

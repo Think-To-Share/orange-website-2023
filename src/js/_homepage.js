@@ -83,7 +83,7 @@ if(document.querySelector(".new-releases-sec")){
     tns({
         container:".new-releases-sec .slider-container",
         items:4,
-        nav:false,
+        nav:true,
         gutter: 20,
         controls:false,
         autoplay: true,

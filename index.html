@@ -171,10 +171,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 offset-xl-1">
-                    <h2 class="about-heading">Orange Publishers</h2>
-                    <p class="about-sub-heading">Leading Book Publishing Company In Kolkata</p>
+                    <h1 class="about-heading">Orange Publishers</h1>
+                    <h1 class="about-sub-heading">Leading Book Publishing Company In Kolkata</h1>
                     <p class="about-sub-text">Publishing Your Dream!</p>
-                    <p class="about-text">Orange Publishers is a leading self book publishing house in India. With more than three decades of combined hard-core experience in the Custom publishing & printing industry, we are here to help you with everything you will ever need to become a Published Author. <br><br>
+                    <p class="about-text">Orange Publishers is a leading <a href="#book-publishers-india">book publishing house</a>. With more than three decades of combined hard-core experience in the Custom publishing & printing industry, we are here to help you with everything you will ever need to become a Published Author. <br><br>
                         
                     Your desire to become a published author can come true in just 4 easy steps. Before long, you will find your book, your creation, proudly gracing the bookshelves much like a shining newborn star. Straight & simple. No fine print. No dilly-dally. <br><br>
                         
@@ -200,7 +200,8 @@
     <section class="new-releases-sec">
         <div class="container">
             <h2 class="new-releases-heading">New Releases</h2>
-            <p class="new-releases-sub-heading">It is a long established fact that a reader will be distracted</p>
+            <p class="new-releases-sub-heading">Check out everything new from your favourite book publishing company in Kolkata 
+            </p>
             <div class="row gy-5 justify-content-center">
                 <!-- <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="new-releases-text h-100">
@@ -495,15 +496,15 @@
     <!-- Our Events Section Start -->
     <section class="events-sec">
         <div class="container"  x-data="{open:0}" >
-            <h2 class="events-sec-heading">Our Events</h2>
-            <p class="events-sec-sub-heading">Be the readable content of a page when looking at its layout.</p>
+            <h2 class="events-sec-heading">Events</h2>
+            <p class="events-sec-sub-heading">Take a look at the most important events at our publishing company.</p>
             <div class="row evnt-content gy-5 justify-content-center">
                 <div class="col-6 col-sm-6 col-md-4 col-lg-4 event-btn">
                     <div class="events-content-text h-100">                        
                         <div class="card h-100  " x-on:click="open = 0" :class="{ 'active': open === 0 }">
                             <div class="card-body">                               
                                 <h3 class="card-heading-text">Book Fair</h3>
-                                <p class="card-text">Printing & Typesetting</p>
+                                <!-- <p class="card-text">Printing & Typesetting</p> -->
                             </div>
                         </div>                       
                     </div>
@@ -513,7 +514,7 @@
                         <div class="card h-100 " x-on:click="open = 1" :class="{ 'active': open === 1 }">
                             <div class="card-body">                               
                                 <h3 class="card-heading-text">Book Launch</h3>
-                                <p class="card-text">Printing & Typesetting</p>
+                                <!-- <p class="card-text">Printing & Typesetting</p> -->
                             </div>
                         </div>                     
                     </div>
@@ -692,7 +693,12 @@
     <section class="glimpse-sec">
         <div class="container">
             <div class="row glimpse-row">
+                <div class="d-lg-none">
+                    <p class="glimpse-sec-heading">Glimpse</p>
+                    <p class="glimpse-sec-sub-heading">By <span class="author-name">Anjandev Roy</span></p>
+                </div>
                 <div class="col-12 col-lg-6 glimpse">
+                   
                     <div class="best-seller">
                         <img src="./src/images/img3.jpg" class="image-container about-us-image" alt="Orange book">
                     </div>
@@ -702,8 +708,11 @@
                     
                 </div>
                 <div class="col-12 col-lg-6 glimpse-second">
-                    <h2 class="glimpse-sec-heading">Glimpse</h2>
-                    <p class="glimpse-sec-sub-heading">By <span class="author-name">Anjandev Roy</span></p>
+                    <div class="d-none d-lg-block">
+                        <h2 class="glimpse-sec-heading">Glimpse</h2>
+                        <p class="glimpse-sec-sub-heading">By <span class="author-name">Anjandev Roy</span></p>
+                    </div>
+
                     <p class="glimpse-sec-text">“My heart always knew, you’re the dew, my dry soul would never bid adieu. But I still don’t know why I let you go and waited all my life.. just for you” An incredible tale of love, a story that moved many hearts.<br><br>
                     Over 24,000 Copies Sold !<br><br> Available on BLUE ROSE book store and other online stores.</p>
 
@@ -722,7 +731,7 @@
     <section class="publishing-service-sec">
         <div class="container">
             <h2 class="publishing-service-heading">Publishing Services</h2>
-            <p class="publishing-service-sub-heading">It is a long established fact that a reader will be distracted</p>
+            <p class="publishing-service-sub-heading">Choose your favourite publishing services from the list and expect the finest professional perfection</p>
             <div class="row gy-5 justify-content-center publishing-service-container">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 publishing-service-item">
                     <div class="publishing-service-text h-100">
@@ -732,8 +741,8 @@
                                 <div class="img-container">
                                     <img class="card-img-top" src="./src/images/book-marketing.png" alt="Card image">
                                 </div>
-                                <h3 class="card-heading-text">Book Marketing</h3>
-                                <p class="card-text">Printing & Typesetting</p>
+                                <h3 class="card-heading-text">Book Publishing</h3>
+                                <p class="card-text">Everything In-house</p>
                             </div>
                             </a>
                         </div>
@@ -748,7 +757,7 @@
                                     <img class="card-img-top" src="./src/images/author-website.png" alt="Card image">
                                 </div>
                                 <h3 class="card-heading-text">Author Website</h3>
-                                <p class="card-text">Printing & Typesetting</p>
+                                <p class="card-text">Detailed HTTPS Website</p>
                             </div>
                             </a>
                         </div>
@@ -763,7 +772,7 @@
                                     <img class="card-img-top" src="./src/images/cover-designing.png" alt="Card image">
                                 </div>
                                 <h3 class="card-heading-text">Cover Designing</h3>
-                                <p class="card-text">Printing & Typesetting</p>
+                                <p class="card-text">In-house Illustrator & Graphics Designer</p>
                             </div>
                             </a>
                         </div>
@@ -778,7 +787,7 @@
                                         <img class="card-img-top" src="./src/images/e-book.png" alt="Card image">
                                     </div>
                                     <h3 class="card-heading-text">eBook Conversion</h3>
-                                    <p class="card-text">Printing & Typesetting</p>
+                                    <p class="card-text">Every eBook Format</p>
                                 </div>
                             </a>
                         </div>
@@ -795,7 +804,7 @@
     <!-- Testimonials section start  -->
     <section class="client-section">
         <div class="container">
-            <h2 class="client-section-heading">Testimonials</h2>
+            <h2 class="client-section-heading">Our Auhtor's Say</h2>
             <div class="row">   
                 <div class="col">
                     <div class="slides-container">
@@ -1070,7 +1079,7 @@
     <!-- blog section  -->
     <section class="blogs-sec">
         <div class="container">
-            <h2 class="blogs-sec-heading">Our Latest Blogs</h2>
+            <h2 class="blogs-sec-heading">Story To Share</h2>
             <div class="blog-section-box">
                 <div class="row blog-area">
                     <div class="col-md-4 blog-box" >
