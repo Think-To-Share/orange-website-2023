@@ -1,0 +1,189 @@
+
+.contactpage{
+    background-color: #f8f8f8;
+}
+
+.contact-page-top-section{
+    background-image: url("../images/blog-title.png");  
+    padding: 75px;
+    margin-bottom: 60px;
+    @media (min-width:576px) {
+        padding: 140px; 
+    }
+
+    .section-heading{
+        .main-heading{
+            color: #3d4043;
+            font-family: $primary-font;
+            font-weight: 800;
+            text-align: center;
+            font-size: 32px;
+            
+            @media (min-width:576px) {
+                font-size: 50px;
+            }
+        }
+    }
+    
+}
+
+.contact-section2 {
+    padding: 20px;
+    @media (min-width:576px) {
+        padding: 40px;
+    }
+    .contact-text {
+        color: #3d4043;
+        font-family: $primary-font;
+        .contact-head {
+            font-weight: 800;
+            font-size: 36px;
+            text-align: center;
+            margin-bottom:30px;
+            @media (min-width:576px) {
+                font-size: 48px;
+                text-align: left;
+            }
+        }
+       
+        .contacts {
+            .contact {
+                display: inline-flex;
+                align-items: flex-start;
+                column-gap: 9px;
+                margin-bottom: 20px;
+                .left-side{
+                    .contact-icon{
+                        .icon-img{
+                          max-width: none;  
+                        }
+                    }
+                }
+                .right-side {
+                    font-family: $primary-font;
+                    h3 {
+                        font-weight: 400;
+                        font-size: 17px;
+                        margin: 0;
+
+                        @media (min-width:576px) {
+                            font-size: 19px;
+                        }
+                    }
+                    p {
+                        font-weight: 500;
+                        font-size: 16px;
+                        margin: 0;
+                        @media (min-width:576px) {
+                            font-size: 19px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-map{
+        iframe{
+            border: 1px solid #d7d7d7;
+            border-radius: 20px;
+            width: 100%;
+            height: 200px;
+        }
+        
+    }
+   
+
+    .form-heading {
+        h3 {
+            font-family: $primary-font;
+            font-weight: 800;
+            font-size: 20px;
+            @include padding-left(2.5rem);
+        }
+
+        background-color: #ffffff;
+        padding-top: 50px;
+        border-radius: 30px;
+        @include padding-left(2.5rem);
+        @include padding-right(2.5rem);
+
+        @media (min-width:576px) {
+           h3{
+                font-size: 36px;
+           } 
+
+        }
+    }
+    .input-container {
+        font-weight: 300;
+        font-size: 17px;
+        @include padding-left(0.5rem);
+        @include padding-right(0.5rem);
+        textarea {
+            height: 180px;
+            border-radius: 23px;
+            width: 100%;
+            padding: 8px 18px;
+            border-color: #2e2f3029;
+            @media (min-width:576px) {
+                padding: 16px 35px; 
+            }
+        }
+        .form-control {
+            border-radius: 10em;
+            padding: 8px 18px;
+            gap: 40px;
+
+            @media (min-width:576px) {
+                padding: 16px 35px; 
+            }
+        }
+
+        .field{
+            width: 100%;
+            display: block;
+            margin-bottom: 15px;
+            @media (min-width:768px) {
+                margin-bottom: 10px;
+                display: inline-flex;
+                column-gap: 5px;
+            }
+            .field-gap{
+                margin-bottom: 10px;
+            }
+        }
+
+        
+        .submit-btn-container{
+            width: 100%;
+            margin-top: 20px;
+            text-align: left;
+        }
+        .submit-btn {
+            text-decoration: none;
+            text-align: center;
+            color: #ffffff;
+            background-color: $secondary-color;
+            @include font-size(0.7rem);  
+            padding: 13px 25px;
+            display: inline-block;
+            font-family: $primary-font;
+            font-weight: 400;
+            border-radius: 50px;
+            border:1px solid $secondary-color;
+            transition: all 0.3s ease-in-out;
+            margin-bottom: 50px;
+            &:hover{
+                background-color: transparent;
+                color: $secondary-color;
+                border:1px solid $secondary-color;
+            }    
+            
+            @media (min-width:576px) {
+                @include font-size(1rem);  
+                padding: 15px 40px;
+            }
+        }
+    }
+}
