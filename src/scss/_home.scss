@@ -162,6 +162,7 @@
 //New Releases Section Start
 .new-releases-sec {
   margin-bottom: 50px;
+
   .new-releases-heading {
     text-align: center;
     font-family: $primary-font;
@@ -1017,11 +1018,17 @@
   text-align: center;
   padding-top: 80px;
   padding-bottom: 120px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  .slides {
+    &:not(.tns-slider) {
+      height: 0;
+      overflow-x: hidden;
+    }
+  }
 
   .tns-outer {
     position: relative;
